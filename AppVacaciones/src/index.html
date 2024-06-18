@@ -1,33 +1,32 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <title>Vacaciones</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="Logo GNT 2.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
     th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
+        padding: 12px;  /* Incrementamos el padding para mayor separación */
         text-align: left;
+        vertical-align: middle; /* Alineamos verticalmente al medio */
     }
     th {
-        background-color: #f2f2f2;
+        background-color: #f8f9fa;  /* Color más claro para la cabecera */
+        font-weight: bold;
     }
-    tr:nth-child(even) {
-        background-color: #f9f9f9;
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2; /* Color de fondo para filas pares */
     }
-</style>
-  <link rel="icon" type="image/png" href="Logo GNT 2.png">
+  </style>
 </head>
-<body>
-  <h1>Lista de Empleados</h1>
-    <table>
-        <thead>
+<body class="container">
+  <h1 class="my-4 text-center">Lista de Empleados</h1>
+  <div class="table-responsive">
+    <table class="table table-hover table-bordered">
+        <thead class="table-light">
             <tr>
                 <th>Región</th>
                 <th>Plaza</th>
@@ -72,9 +71,11 @@
                 <td>10</td>
                 <td>10</td>
             </tr>
-            <!-- Añade más filas según sea necesario -->
+            <!-- Añadir más filas según sea necesario -->
         </tbody>
     </table>
+  </div>
   <app-root></app-root>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFSpDGYvv7E6cAh2eFZpKOFLpo2SG7WFSd5n1tHtW5THmUpZG6xY4ZB6+N" crossorigin="anonymous"></script>
 </body>
 </html>
