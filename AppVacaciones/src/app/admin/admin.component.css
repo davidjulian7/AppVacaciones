@@ -16,3 +16,26 @@ tbody tr:nth-child(even) {
     border-color: #83AE04 !important;
     color: white !important;
   }
+
+  .custom-btn {
+    display: inline-block;
+    width: 65px; 
+    height: 30px; 
+    text-align: center;
+    line-height: 20px; /* Alinea el texto verticalmente */
+    font-size: 14px; /* Ajusta el tamaño del texto */
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
