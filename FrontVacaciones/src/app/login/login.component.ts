@@ -19,16 +19,16 @@ export class LoginComponent {
     const username = form.value.username;
     const password = form.value.password;
 
-    this.authService.login(username, password).subscribe(
-      (isLoggedIn) => {
+    this.authService.login(username, password).subscribe({
+      next: (isLoggedIn) => {
         if (isLoggedIn) {
           console.log('Inicio de sesión exitoso');
           // Redirigir o hacer algo después de un login exitoso
         }
       },
-      (error) => {
+      error: (error) => {
         console.error('Error al iniciar sesión:', error);
       }
-    );
+    });
   }
 }
